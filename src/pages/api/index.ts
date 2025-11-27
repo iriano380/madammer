@@ -13,8 +13,8 @@ export const localProxy = import.meta.env.LOCAL_PROXY;
 
 export const apiBaseUrl =
   import.meta.env.OPENAI_API_BASE_URL ||
-  process.env.OPENAI_API_BASE_URL ||
-  'api.openai.com';
+  process.env.GROQ_API_KEY ||
+  'https://api.groq.com/openai/v1';
 
 // use proxy in local env
 export const baseURL = (
